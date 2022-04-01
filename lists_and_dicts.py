@@ -18,6 +18,12 @@ def run():
 	for key, value in super_dict.items():
 		print(key, "-", value)
 
+	res  = { key : key**3 for key in range(101)}
+	#print(res)
+
+	from math import sqrt
+	res1 = { key : sqrt(key) for key in range(10001)}
+	print(res1)
 
 if __name__=='__main__':
 	run()
